@@ -1,140 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-
-        <!-- ✅ Load slick theme CSS ✅ -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-        <title>Document</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="./style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
+    <body class="bg-[#fbf3ec]">
         <header>
             <div class="overlay">
-                <h1>Kapture CX</h1>
-                <h3>AI-driven Customer Support Platform for Enterprises</h3>
-                <p>Enterprise focused omnichannel support suite that understands
-                    your business and customers.</p>
+                <h1>Deliver Delight: <br>
+                    Move beyond Transactions</h1>
+                <p>Provide best-in-class retail customer support and delight
+                    your shoppers with AI-enabled CX automation platform.</p>
                 <br>
                 <button>Schedule a Demo</button>
             </div>
         </header>
-        <div class="ag-carousel-block">
-            <div class="ag-format-container">
-                <div class="ag-carousel-arrow_box">
-                    <i class="js-ag-carousel-arrow_prev ag-carousel-arrow">
-                        <svg class="svg-arrow-left">
-                            <use xlink:href="#ag-arrow-left"></use>
-                        </svg>
-                    </i>
-
-                    <i class="js-ag-carousel-arrow_next ag-carousel-arrow">
-                        <svg class="svg-arrow-right">
-                            <use xlink:href="#ag-arrow-right"></use>
-                        </svg>
-                    </i>
+        <div class="flex justify-center gap-10 pt-20">
+            <div
+                class="flex flex-col justify-center items-center">
+                <div
+                    onmouseover="this.style.transform='translateY(-50px)',showText('text1')"
+                    onmouseout="this.style.transform='translateY(0px)',hideText('text1')"
+                    style="
+                transition: all 0.6s ease-in-out;
+        "
+                    class="flex flex-col bg-white cursor-pointer shadow-2xl w-48 h-56 xl:h-64 rounded-3xl justify-evenly">
+                    <div class='w-full flex justify-center'>
+                        <img class='w-16 3xl:w-20'
+                            src='https://www.kapture.cx/en/images/retail/Ecommerce.png'
+                            } alt />
+                    </div>
+                    <div class='text-gray-700 text-center w-2/3 mx-auto
+              text-xl font-semibold'>Ecommerce</div>
+                </div>
+                <div
+                    id="text1"
+                    style="
+          transition: all 0.6s ease-in-out;
+        "
+                    class="text-black bottom-0 w-48 text-center pt-4 text-md">
+                    Personalized interactions, and data-driven insights that
+                    elevate
+                    customer experience to new heights.
                 </div>
             </div>
-
-            <div class="ag-carousel_box">
-                <ul id="js-carousel" class="js-carousel ag-carousel_list">
-                    <li class="ag-carousel_item">
-                        <a href="./ProductPage/product.html">
-                            <figure class="ag-carousel_figure">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/9725/9725546.png"
-                                    class="ag-carousel_img" alt />
-                            </figure>
-
-                            <div class="ag-carousel_descr">
-                                <div class="ag-carousel_name">
-                                    Retail
-                                </div>
-                                <div class="ag-carousel_doctor">
-                                    Contact center management for online and
-                                    offline stores. CX partner for all leading
-                                    ecommerce giants.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="ag-carousel_item">
-                        <a href="./ProductPage/product.html">
-                            <figure class="ag-carousel_figure">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/2910/2910254.png"
-                                    class="ag-carousel_img" alt />
-                            </figure>
-
-                            <div class="ag-carousel_descr">
-                                <div class="ag-carousel_name">
-                                    BFSI
-                                </div>
-                                <div class="ag-carousel_doctor">
-                                    Trusted CX partner for leading Banks,
-                                    FinTech, Insurers and NBFCs.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="ag-carousel_item">
-                        <a href="./ProductPage/product.html">
-                            <figure class="ag-carousel_figure">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/1731/1731604.png"
-                                    class="ag-carousel_img" alt />
-                            </figure>
-
-                            <div class="ag-carousel_descr">
-                                <div class="ag-carousel_name">
-                                    Consumer Durables
-                                </div>
-                                <div class="ag-carousel_doctor">
-                                    Manage after sales services, field agents
-                                    and service center operations.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="ag-carousel_item">
-                        <a href="./ProductPage/product.html">
-                            <figure class="ag-carousel_figure">
-                                <img
-                                    src="https://cdn-icons-png.flaticon.com/512/5029/5029158.png"
-                                    class="ag-carousel_img" alt />
-                            </figure>
-
-                            <div class="ag-carousel_descr">
-                                <div class="ag-carousel_name">
-                                    Travel
-                                </div>
-                                <div class="ag-carousel_doctor">
-                                    Trusted CX partner for airlines, cruises and
-                                    online travel aggregators.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div
+                class="flex flex-col justify-center items-center">
+                <div
+                    onmouseover="this.style.transform='translateY(-50px)',showText('text2')"
+                    onmouseout="this.style.transform='translateY(0px)',hideText('text2')"
+                    style="
+                transition: all 0.6s ease-in-out;
+        "
+                    class="flex flex-col bg-white cursor-pointer shadow-2xl w-48 h-56 xl:h-64 rounded-3xl justify-evenly">
+                    <div class='w-full flex justify-center'>
+                        <img class='w-16 3xl:w-20'
+                            src='https://www.kapture.cx/en/images/retail/FMCG.png'
+                            } alt />
+                    </div>
+                    <div class='text-gray-700 text-center w-2/3 mx-auto
+              text-xl font-semibold'>FMCG</div>
+                </div>
+                <div
+                    id="text2"
+                    style="
+          transition: all 0.6s ease-in-out;
+        "
+                    class="text-black bottom-0 w-48 text-center pt-4 text-md">
+                    Optimize supply chain operations and personalize shopping
+                    experience.
+                </div>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center">
+                <div
+                    onmouseover="this.style.transform='translateY(-50px)',showText('text3')"
+                    onmouseout="this.style.transform='translateY(0px)',hideText('text3')"
+                    style="
+                transition: all 0.6s ease-in-out;
+        "
+                    class="flex flex-col bg-white cursor-pointer shadow-2xl w-48 h-56 xl:h-64 rounded-3xl justify-evenly">
+                    <div class='w-full flex justify-center'>
+                        <img class='w-16 3xl:w-20'
+                            src='https://www.kapture.cx/en/images/retail/Beauty-Cosmetics.png'
+                            } alt />
+                    </div>
+                    <div class='text-gray-700 text-center w-2/3 mx-auto
+              text-xl font-semibold'>Beauty & Cosmetics</div>
+                </div>
+                <div
+                    id="text3"
+                    style="
+          transition: all 0.6s ease-in-out;
+        "
+                    class="text-black bottom-0 w-48 text-center pt-4 text-md">
+                    Effortlessly curate tailor-made customer experiences that
+                    leave a lasting impression.
+                </div>
+            </div>
+            <div
+                class="flex flex-col justify-center items-center">
+                <div
+                    onmouseover="this.style.transform='translateY(-50px)',showText('text4')"
+                    onmouseout="this.style.transform='translateY(0px)',hideText('text4')"
+                    style="
+                transition: all 0.6s ease-in-out;
+        "
+                    class="flex flex-col bg-white cursor-pointer shadow-2xl w-48 h-56 xl:h-64 rounded-3xl justify-evenly">
+                    <div class='w-full flex justify-center'>
+                        <img class='w-16 3xl:w-20'
+                            src='https://www.kapture.cx/en/images/retail/D2C.png'
+                            alt />
+                    </div>
+                    <div class="text-gray-700 text-center w-2/3 mx-auto
+                            text-xl font-semibold">D2C</div>
+                </div>
+                <div
+                    id="text4"
+                    style="
+          transition: all 0.6s ease-in-out;
+                    "
+                    class="bottom-0 w-48 text-center pt-4 text-md">
+                    Leverage AI-driven algorithms to offer recommendations,
+                    optimize efficiency, reduce costs
+                </div>
             </div>
         </div>
-
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
             <symbol id="ag-arrow-left" viewBox="0 0 7 12">
                 <g>
@@ -152,8 +148,7 @@
                 </g>
             </symbol>
         </svg>
-
-        <div class="main"></div>
+        <div class="pt-32"></div>
         <div class="footer">
             <div class="bubbles">
                 <div class="bubble"
@@ -443,33 +438,14 @@
                 </filter>
             </defs>
         </svg>
-        <div id="sy-whatshelp">
-            <div class="sywh-services">
-                <a href="#" class="messenger" data-tooltip="Livechat"
-                    data-placement="left" target="_blank">
-                    <i class="fa fa-comments"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=%2B917020172955" class="whatsapp" data-tooltip="WhatsApp"
-                    data-placement="left" target="_blank">
-                    <i class="fa fa-whatsapp"></i>
-                </a>
-                <a href="tel:7020172955" class="call" data-tooltip="Call" data-placement="left">
-                    <i class="fa fa-phone"></i>
-                </a>
-            </div>
-            <a class="sywh-open-services" data-tooltip="Talk to Expert"
-                data-placement="left">
-                <i class="fa fa-comments"></i>
-                <i class="fa fa-times"></i>
-            </a>
-        </div>
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../script.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
-        <script src="script.js"></script>
+        <script src="product.js" async defer></script>
     </body>
 </html>
